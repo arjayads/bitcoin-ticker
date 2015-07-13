@@ -39,7 +39,7 @@ CREATE TABLE `ticker` (
 `updated_date_time` DATETIME NULL
 ) ENGINE=MyISAM;
 
-4. Check out the project from bitbucket
+4. Check out source
 
 5. Edit your hosts file and add the ff:
 
