@@ -46,7 +46,9 @@ Steps for Greenfield Deployment:
 ```
 4. Check out source
 5. Edit your hosts file and add the ff: 
-   127.0.0.1 bitcoin.dev
+   ```
+    127.0.0.1 bitcoin.dev
+```
 6. Edit your apache vhosts and add the ff:
 ```
   <VirtualHost *:80>
