@@ -7,7 +7,7 @@ Requirements:
 
 Assumed that PHP, MySQL Database and Apache Web server are installed correctly.
 
-Resource: https://btc­e.com/api/2/btc_usd/ticker
+Resource: https://btc­e.com/api/3/btc_usd/ticker
 
 Steps for Greenfield Deployment:
 
