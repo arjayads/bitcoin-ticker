@@ -19,7 +19,7 @@ Steps for Greenfield Deployment:
 
 1. Create a database and name it bitcoin.
 2. Create a user with the ff credentials:
-```    
+```
     username: bitcoin
     password: bitcoin
 ```
@@ -45,8 +45,8 @@ Steps for Greenfield Deployment:
   ) ENGINE=MyISAM;
 ```
 4. Check out source
-5. Edit your hosts file and add the ff: 
-   ```
+5. Edit your hosts file and add the ff:
+```
     127.0.0.1 bitcoin.dev
 ```
 6. Edit your apache vhosts and add the ff:
@@ -61,11 +61,11 @@ Steps for Greenfield Deployment:
       Allow from All
     </Directory>
   </VirtualHost>
-  ```
+```
 
 7.Restart apache
 8. Create cron job with ff entry:
-   ```
+```
     */15 * * * * php path/to/cron.php
 ```
 9. On your browser’s Web Address Area, type or paste http://bitcoin.dev/ and the index page of the project shall display
