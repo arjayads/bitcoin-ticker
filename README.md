@@ -1,4 +1,6 @@
 # bitcoin-ticker 
+Note: https://btc-e.com/api/3/ticker/btc_usd may its fields.
+
 Overview:
 
 This is a simple project that ingrates PHP, MySQL, Json and 3rd party API
