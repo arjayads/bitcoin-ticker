@@ -10,17 +10,23 @@ Requirements:
 
 Assumed that PHP, MySQL Database and Apache Web server are installed correctly.
 
-Resource: https://btc­e.com/api/3/btc_usd/ticker
+Resource: 
+```
+https://btc­e.com/api/3/btc_usd/ticker
+```
 
 Steps for Greenfield Deployment:
 
 1. Create a database and name it bitcoin.
 2. Create a user with the ff credentials:
+```    
     username: bitcoin
     password: bitcoin
+```
     and grant access to bitcoin database
 
 3. Create a table that will be used to store the data coming from the resource
+```
    CREATE TABLE `ticker` (
   `high` DECIMAL(18,8) NULL DEFAULT NULL,
   `low` DECIMAL(18,8) NULL DEFAULT NULL,
@@ -37,6 +43,7 @@ Steps for Greenfield Deployment:
   `low_last_market_diff` DECIMAL(18,8) NULL DEFAULT '0.00000000',
   `updated_date_time` DATETIME NULL
   ) ENGINE=MyISAM;
+```
 4. Check out source
 5. Edit your hosts file and add the ff: 
    127.0.0.1 bitcoin.dev
@@ -58,6 +65,6 @@ Steps for Greenfield Deployment:
 8. Create cron job with ff entry:
    ```
     */15 * * * * php path/to/cron.php
-    ```
+```
 9. On your browser’s Web Address Area, type or paste http://bitcoin.dev/ and the index page of the project shall display
 10. Enjoy!
