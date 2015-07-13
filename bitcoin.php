@@ -20,7 +20,7 @@ class Bitcoin {
     }
 
     function getTickerObj() { 
-        $json = file_get_contents('https://btc-e.com/api/2/btc_usd/ticker');
+        $json = file_get_contents('https://btc-e.com/api/3/btc_usd/ticker');
         return json_decode($json);   
     }
 
